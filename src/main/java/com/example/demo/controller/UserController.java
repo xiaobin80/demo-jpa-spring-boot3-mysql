@@ -33,14 +33,14 @@ public class UserController {
 	RedisTemplate redisTemplate;
 	
 	@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:3030", "http://localhost:4200"})
-	@GetMapping(value = "/list", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@GetMapping(value = "/list", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<List<UserDetails>> getAllUser() {
 		List<UserDetails> user = userService.getUsers();
 		return new ResponseEntity<List<UserDetails>>(user, HttpStatus.OK);
 	}
 	
 	@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:3030", "http://localhost:4200"})
-	@GetMapping(value = "/{userId}", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@GetMapping(value = "/{userId}", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<UserDetails> getUser(@PathVariable(value = "userId") Integer userId) {
 		UserDetails user = userService.findUser(userId);
 		return new ResponseEntity<UserDetails>(user, HttpStatus.OK);

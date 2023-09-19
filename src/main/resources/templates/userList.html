@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>User List Page</title>
+
+</head>
+<body>
+	<table border="1">	
+		<tr>
+		<th>User ID</th>
+		<th>User Name</th>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Address</th>
+		</tr>
+
+		<tr th:each="user : ${users}">
+			<td th:text="${user.userId}">User Id</td>
+			<td th:text="${user.userName}">User Name</td>
+			<td th:text="${user.name}">Name</td>
+			<td th:text="${user.email}">email</td>
+			<td th:text="${user.address}">address</td>
+		</tr>
+	</table>
+
+</body>
+</html>

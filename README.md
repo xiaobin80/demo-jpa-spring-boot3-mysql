@@ -10,7 +10,7 @@ This is the demo that shows a datasheet.
 * MySQL
 >> [redis-server](https://tdtc-hrb.github.io/csdn/post/ops_dc_redis_ubuntu/)
 * Thymeleaf    
->> [v3.1.x](https://www.thymeleaf.org/doc/articles/thymeleaf31whatsnew.html)
+>> [v3.1.x](https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html)
 * ReactJS    
 >> [userDetails-saga](https://github.com/xiaobin80/userDetails-saga)    
 >> [userDetails-thunk](https://github.com/xiaobin80/userDetails-thunk)    
